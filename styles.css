@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,500&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Luxurious+Script&family=Pixelify+Sans:wght@400..700&display=swap");
+
+/* @font-face {
+  font-family: "Ballet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+:root {
+  --color-bg: #fff8f0;
+  --color-ink: #3b2a2a;
+  --color-terracotta: #d9784e;
+  --color-rose: #e8a0a0;
+  --color-hero-bg: #1f1029;
+  --color-hero-accent: #ff5ca8;
+
+  --font-display: "YourCursiveFont", cursive;
+  --font-serif: "Fraunces", serif;
+  --font-mono: "Space Mono", monospace;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-serif);
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) var(--space-md);
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-md);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-transform: lowercase;
+}
+
+#about {
+  background-color: var(--color-hero-bg);
+  color: var(--color-bg);
+  padding: var(--space-xl) var(--space-md);
+  text-align: center;
+}
+
+#about h1 {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--color-hero-accent);
+  text-shadow: 0 0 12px var(--color-hero-accent);
+}
+
+section {
+  padding: var(--space-lg) var(--space-md);
+}
+
+section h2 {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 2rem;
+  margin-bottom: var(--space-md);
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--color-terracotta);
+  color: var(--color-bg);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.tech {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-terracotta);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+.project-card {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+
+@media (max-width: 640px) {
+  #about h1 {
+    font-size: 2.5rem;
+  }
+}
