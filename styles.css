@@ -1,0 +1,25 @@
+body {
+  background-color: #ffdcb4;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-photo {
+  background-image: url("images/sunset.png");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+#about {
+  background-color: #77311e;
+  color: #ffbe7b;
+  text-align: center;
+  padding: 50px 20px;
+}
