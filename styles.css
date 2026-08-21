@@ -1,3 +1,30 @@
+@font-face {
+  font-family: "Blosta";
+  src: url("fonts/Blosta-Script.otf");
+}
+@font-face {
+  font-family: "Aston";
+  src: url("fonts/Aston-Script.ttf");
+}
+
+@font-face {
+  font-family: "PressStart";
+  src: url("fonts/PressStart2P-Regular.ttf");
+}
+@font-face {
+  font-family: "Aston";
+  src: url("fonts/Aston-Script.ttf");
+}
+
+@font-face {
+  font-family: "Yeseva";
+  src: url("fonts/YesevaOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Ballet";
+  src: url("fonts/Ballet-Regular.ttf");
+}
 body {
   background-color: #ffdcb4;
   box-sizing: border-box;
@@ -15,11 +42,30 @@ body {
   background-image: url("images/sunset.png");
   background-size: cover;
   background-position: center;
-  height: 200px;
+  height: 250px;
+}
+.hero-photo2 {
+  background-image: url("images/window.png");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
 }
 #about {
   background-color: #77311e;
   color: #ffbe7b;
   text-align: center;
   padding: 50px 20px;
+}
+
+#about h1,
+h2,
+h3 {
+  font-family: "Blosta", cursive;
+}
+h3 {
+  font-family: "Yeseva", cursive;
+}
+
+p {
+  font-family: "PressStart", monospace;
 }
